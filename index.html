@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>30-Day Audit Promo Plan</title>
+<meta name="description" content="Build your custom 30-day content plan to promote your audit or reading. Five copy-paste prompts, the creator research step, the brain-dump questions and the caption that goes on every post.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0a12;--bg2:#12101d;--surf:#15121f;--surf2:#1c1829;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+  --txt:#f1eefb;--soft:#c9c3dd;--muted:#8b85a3;--lav:#b79cf5;--vio:#7c5cf0;--gold:#e8c878;--mint:#7fe0b8;--pink:#f08bb0;--sky:#7cc4f5;--coral:#f5a27c;
+  color-scheme:dark;
+}
+:root[data-theme="dark"]{--bg:#0b0a12;--txt:#f1eefb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:300;line-height:1.6;
+  background-image:radial-gradient(ellipse at 0% 0%,rgba(124,92,240,.22),transparent 45%),radial-gradient(ellipse at 100% 100%,rgba(127,224,184,.07),transparent 45%);background-attachment:fixed}
+.wrap{max-width:920px;margin:0 auto;padding:56px 18px 90px}
+h1,h2,h3,h4{font-family:Outfit,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;margin:0}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+.mono{font-family:"DM Mono",ui-monospace,Menlo,monospace}
+a{color:var(--lav);text-decoration:none;border-bottom:1px solid rgba(183,156,245,.4)}
+a:hover{border-color:var(--lav)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--lav);outline-offset:3px;border-radius:6px}
+p{margin:0 0 12px}
+strong{font-weight:600;color:var(--txt)}
+em{color:var(--gold);font-style:normal}
+
+/* hero */
+.hero{padding:0 0 30px}
+.hero .who{font-family:"DM Mono",monospace;font-size:13px;letter-spacing:.08em;color:var(--lav);margin:0 0 18px}
+.hero h1{font-size:clamp(42px,8vw,86px);line-height:.95;letter-spacing:-.045em}
+.hero h1 .serif{color:var(--lav);font-size:1.04em;letter-spacing:-.01em}
+.hero .desc{color:var(--soft);font-size:18px;max-width:640px;margin:22px 0 0}
+.hero .prep{color:var(--muted);font-size:14px;margin:14px 0 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill{font-size:13px;color:var(--soft);border:1px solid var(--line2);border-radius:99px;padding:6px 13px;background:rgba(124,92,240,.08)}
+.pill b{font-weight:600;color:var(--txt)}
+
+/* the map */
+.map{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:26px}
+.map a{display:block;border:1px solid var(--line2);border-radius:14px;padding:11px 12px 10px;background:rgba(0,0,0,.16);color:var(--soft);font-size:13.5px;line-height:1.3}
+.map a:hover{border-color:var(--lav);color:var(--txt)}
+.map a .n{display:block;font-family:"DM Mono",monospace;font-size:11px;color:var(--lav);letter-spacing:.06em;margin-bottom:4px}
+
+/* sections */
+section{margin-top:26px}
+.card{position:relative;background:linear-gradient(135deg,rgba(124,92,240,.13) 0%,var(--surf) 40%,var(--bg2) 100%);border:1px solid var(--line2);border-radius:26px;padding:32px 34px;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent 35%,#000 100%);mask-image:linear-gradient(90deg,transparent 35%,#000 100%)}
+.card>*{position:relative}
+@media(max-width:600px){.card{padding:24px 18px;border-radius:20px}.wrap{padding-top:36px}}
+.step{display:flex;align-items:baseline;gap:14px;margin:0 0 6px}
+.step .n{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:44px;line-height:.9;color:var(--lav);flex:none}
+.sec-title{font-size:clamp(25px,4.2vw,34px);line-height:1.08}
+.sec-sub{color:var(--muted);font-size:15px;margin:0 0 20px}
+.time{display:inline-block;font-family:"DM Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--mint);border:1px solid rgba(127,224,184,.35);border-radius:99px;padding:3px 10px;margin-left:8px;vertical-align:middle}
+.card.gold{border-color:rgba(232,200,120,.35)}
+.card.mint{border-color:rgba(127,224,184,.35)}
+
+ul.dots,ol.steps{margin:0;padding:0;list-style:none}
+ul.dots li{position:relative;padding-left:18px;margin:0 0 9px;color:var(--soft);font-size:15.5px}
+ul.dots li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--lav);opacity:.8}
+ol.steps{counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-left:34px;margin:0 0 10px;color:var(--soft);font-size:15.5px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;border:1px solid var(--line2);background:rgba(124,92,240,.12);color:var(--lav);font-family:"DM Mono",monospace;font-size:12px;display:flex;align-items:center;justify-content:center}
+.note{border-left:2px solid var(--gold);padding:4px 0 4px 14px;margin:18px 0 0;color:var(--soft);font-size:15px}
+.note.m{border-color:var(--mint)}
+.note.p{border-color:var(--pink)}
+.block h3{font-size:17px;font-weight:600;margin:0 0 8px}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:18px 30px}
+@media(max-width:700px){.twocol{grid-template-columns:1fr}}
+
+/* fill-in */
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:6px}
+.field label{display:block;font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--lav);margin:0 0 6px}
+.field input{width:100%;background:rgba(0,0,0,.28);border:1px solid var(--line2);border-radius:12px;color:var(--txt);font:400 15px Outfit,sans-serif;padding:11px 13px}
+.field input::placeholder{color:var(--muted)}
+.field small{display:block;color:var(--muted);font-size:12.5px;margin-top:5px;line-height:1.35}
+.ph{color:var(--gold);background:rgba(232,200,120,.1);border-radius:4px;padding:0 3px}
+.ph.filled{color:var(--mint);background:rgba(127,224,184,.1)}
+
+/* copy boxes */
+.copybox{position:relative;background:rgba(0,0,0,.32);border:1px solid var(--line2);border-radius:18px;padding:18px 20px;margin-top:16px}
+.copybox .lbl{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--lav);margin:0 0 10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-right:92px}
+.copybox pre{margin:0;white-space:pre-wrap;word-wrap:break-word;font:400 14.5px/1.6 "DM Mono",ui-monospace,Menlo,monospace;color:var(--soft)}
+.copybox pre.prose{font:300 15.5px/1.6 Outfit,sans-serif}
+.copy{position:absolute;top:14px;right:14px;background:var(--vio);color:#fff;border:1px solid var(--vio);border-radius:99px;padding:7px 14px;font:500 13px Outfit,sans-serif;cursor:pointer}
+.copy:hover{border-color:#fff}
+.copy.done{background:var(--mint);border-color:var(--mint);color:#0b0a12}
+.copy.ghost{background:transparent;color:var(--lav);border-color:var(--line2)}
+.copy.ghost:hover{border-color:var(--lav)}
+
+/* creators */
+.creators{display:grid;gap:10px;margin-top:16px}
+.creator{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border:1px solid var(--line2);border-radius:16px;padding:14px 16px;background:rgba(0,0,0,.18)}
+.creator .h{font-weight:500;font-size:15.5px}
+.creator .h span{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--muted);margin-left:8px}
+.creator .u{font-family:"DM Mono",monospace;font-size:12.5px;color:var(--muted);word-break:break-all}
+.creator .u a{color:var(--soft);border:0}
+.creator .copy{position:static}
+@media(max-width:480px){.creator{grid-template-columns:1fr}.creator .copy{justify-self:start}}
+
+/* toggle */
+.toggle{display:inline-flex;border:1px solid var(--line2);border-radius:99px;padding:3px;background:rgba(0,0,0,.2);margin:0 0 4px}
+.toggle button{background:transparent;border:0;color:var(--muted);font:500 13.5px Outfit,sans-serif;padding:7px 15px;border-radius:99px;cursor:pointer}
+.toggle button.on{background:var(--vio);color:#fff}
+
+/* questions */
+ol.q{margin:0;padding:0 0 0 0;list-style:none;counter-reset:q}
+ol.q li{counter-increment:q;position:relative;padding:11px 0 11px 40px;border-top:1px solid var(--line);color:var(--soft);font-size:15.5px}
+ol.q li:last-child{border-bottom:1px solid var(--line)}
+ol.q li::before{content:counter(q,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"DM Mono",monospace;font-size:12px;color:var(--lav)}
+ol.q li small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+
+.verdict{font-size:clamp(22px,3.4vw,30px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px;max-width:760px}
+.quote{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:clamp(21px,3.2vw,28px);line-height:1.3;color:var(--gold);margin:0 0 18px;max-width:760px}
+.quote::before{content:"\201C"}.quote::after{content:"\201D"}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:14.5px;color:#fff;background:var(--vio);border:1px solid var(--vio);border-radius:99px;padding:10px 20px}
+.btn:hover{border-color:#fff}
+.btn.o{background:transparent;color:var(--lav);border-color:var(--line2)}
+.btn.o:hover{border-color:var(--lav)}
+.foot{margin-top:40px;color:var(--muted);font-size:13.5px;text-align:center}
+.foot .sig{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:22px;color:var(--lav);margin-bottom:6px}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--mint);color:#0b0a12;font:500 14px Outfit,sans-serif;padding:10px 18px;border-radius:99px;opacity:0;transition:.25s;pointer-events:none;z-index:9}
+.toast.show{opacity:1;transform:translateX(-50%)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="who">THE AUDIT METHOD · SPIRITUAL BUSINESS SKOOL</p>
+  <h1>Your 30-day<br><span class="serif">audit promo</span> plan</h1>
+  <p class="desc">Build a custom 30-day content plan with one job: get the right people to book your audit or reading. Four creators, one brain dump, five prompts, one caption. Copy buttons on everything.</p>
+  <p class="prep">About 90 minutes, start to finish. Then you film.</p>
+  <div class="pills">
+    <span class="pill"><b>Poppy</b> for the research and the plan</span>
+    <span class="pill"><b>Claude</b> for the page you use every day</span>
+    <span class="pill"><b>Loom</b> or a voice memo for your brain dump</span>
+    <span class="pill"><b>Your audit</b> from the Audit Method Day 1 card</span>
+  </div>
+  <nav class="map" aria-label="Steps">
+    <a href="#s1"><span class="n">STEP 1</span>Pick your platform and board</a>
+    <a href="#s2"><span class="n">STEP 2</span>Find 3 to 4 creators</a>
+    <a href="#s3"><span class="n">STEP 3</span>Record your audit brain dump</a>
+    <a href="#s4"><span class="n">STEP 4</span>Load the board in Poppy</a>
+    <a href="#s5"><span class="n">PROMPT 1</span>Who am I?</a>
+    <a href="#s6"><span class="n">PROMPT 2</span>What's working for them?</a>
+    <a href="#s7"><span class="n">PROMPT 3</span>Here's my audit</a>
+    <a href="#s8"><span class="n">PROMPT 4</span>Build my 30 days</a>
+    <a href="#s9"><span class="n">PROMPT 5</span>Turn it into your page</a>
+    <a href="#s10"><span class="n">STEP 10</span>The caption on every post</a>
+    <a href="#s11"><span class="n">STEP 11</span>Post it for 30 days</a>
+  </nav>
+</header>
+
+<!-- fill in once -->
+<section class="card gold" id="fill">
+  <h2 class="sec-title">Fill these in once</h2>
+  <p class="sec-sub">Every prompt and the caption below update as you type. Saved on this device only. Leave one blank and the prompt keeps the <span class="ph">[PLACEHOLDER]</span> for you to fill in later.</p>
+  <div class="fields">
+    <div class="field"><label for="f-platform">[PLATFORM]</label><input id="f-platform" data-key="PLATFORM" placeholder="Instagram, TikTok or YouTube" autocomplete="off"><small>One platform per plan. Instagram and TikTok can share one.</small></div>
+    <div class="field"><label for="f-goal">[GOAL]</label><input id="f-goal" data-key="GOAL" placeholder="e.g. 25K followers" autocomplete="off"><small>Where you want the account to be by the end of this year.</small></div>
+    <div class="field"><label for="f-niche">[MY NICHE]</label><input id="f-niche" data-key="MY NICHE" placeholder="e.g. tarot readers who want paying clients" autocomplete="off"><small>Who you help and with what. One line.</small></div>
+    <div class="field"><label for="f-audit">[AUDIT NAME]</label><input id="f-audit" data-key="AUDIT NAME" placeholder="e.g. Psychic Gifts Audit" autocomplete="off"><small>From your Day 1 card. A reading counts.</small></div>
+    <div class="field"><label for="f-kw">[KEYWORD]</label><input id="f-kw" data-key="KEYWORD" placeholder="e.g. AUDIT" autocomplete="off"><small>The word they comment to get the booking link.</small></div>
+  </div>
+</section>
+
+<!-- STEP 1 -->
+<section class="card" id="s1">
+  <div class="step"><span class="n">1</span><h2 class="sec-title">Pick your platform and your board <span class="time">5 MIN</span></h2></div>
+  <p class="sec-sub">One platform, one plan. You can run it again for the next one.</p>
+  <div class="twocol">
+    <div class="block"><h3>Short-form board</h3><ul class="dots"><li>Instagram and TikTok. One plan covers both, you post the same video to each.</li><li>30 videos, 15 to 60 seconds each.</li><li>Pick this if your audience found you through Reels or TikToks.</li></ul></div>
+    <div class="block"><h3>YouTube board</h3><ul class="dots"><li>30 long-form videos with titles, thumbnail text and descriptions.</li><li>Pick this if you already post weekly on YouTube, or you want searchable content that sells the audit for years.</li><li>Prompt 4 has a YouTube version. Everything else is the same.</li></ul></div>
+  </div>
+  <p class="note">Open the <strong>Custom 30-Day Content Plan</strong> board in Poppy and duplicate the version for your platform. Your copy is where everything in this guide happens.</p>
+</section>
+
+<!-- STEP 2 -->
+<section class="card" id="s2">
+  <div class="step"><span class="n">2</span><h2 class="sec-title">Find 3 to 4 creators <span class="time">15 MIN</span></h2></div>
+  <p class="sec-sub">In your niche or next door to it, growing on the platform you picked, posting the kind of videos you'd actually make.</p>
+  <div class="twocol">
+    <div class="block"><h3>What you're looking for</h3><ul class="dots"><li><strong>Momentum, not size.</strong> A 20K account with videos pulling 300K views teaches you more than a 2M account coasting.</li><li><strong>Outliers.</strong> Scroll their grid and look for the videos with 5 to 10 times their usual views. Those are what Poppy will study.</li><li><strong>Your format.</strong> If you'll be talking to camera, pick talking-to-camera creators. Not a faceless page.</li><li><strong>Next-door niches count.</strong> A business coach's framework works for a love reader. The structure moves, the topic is yours.</li></ul></div>
+    <div class="block"><h3>Where to look</h3><ul class="dots"><li>Your own Explore or For You page. The algorithm already knows what you watch.</li><li>Search the words your people use: "psychic business", "tarot readers", "human design coach".</li><li>Who the creators you already follow are collaborating with.</li><li>Copy the profile URL from the share button on their profile, not a single video.</li></ul></div>
+  </div>
+  <h3 style="margin:24px 0 2px;font-size:17px;font-weight:600">The four I'm using for mine</h3>
+  <p style="color:var(--muted);font-size:14px;margin:0">Short-form board, Instagram and TikTok. Business and content creators, because that's what my audit is about. Yours should be in your lane.</p>
+  <div class="creators">
+    <div class="creator"><div><div class="h">Grow With Evelyn<span>INSTAGRAM</span></div><div class="u"><a href="https://www.instagram.com/growwithevelyn/" target="_blank" rel="noopener">https://www.instagram.com/growwithevelyn/</a></div></div><button class="copy ghost" data-copy="https://www.instagram.com/growwithevelyn/">Copy URL</button></div>
+    <div class="creator"><div><div class="h">Mami Onami<span>TIKTOK</span></div><div class="u"><a href="https://www.tiktok.com/@mami.onami" target="_blank" rel="noopener">https://www.tiktok.com/@mami.onami</a></div></div><button class="copy ghost" data-copy="https://www.tiktok.com/@mami.onami">Copy URL</button></div>
+    <div class="creator"><div><div class="h">Noe Varner<span>TIKTOK</span></div><div class="u"><a href="https://www.tiktok.com/@noevarner.ai" target="_blank" rel="noopener">https://www.tiktok.com/@noevarner.ai</a></div></div><button class="copy ghost" data-copy="https://www.tiktok.com/@noevarner.ai">Copy URL</button></div>
+    <div class="creator"><div><div class="h">The Content Queen<span>INSTAGRAM</span></div><div class="u"><a href="https://www.instagram.com/the_content_queen/" target="_blank" rel="noopener">https://www.instagram.com/the_content_queen/</a></div></div><button class="copy ghost" data-copy="https://www.instagram.com/the_content_queen/">Copy URL</button></div>
+  </div>
+  <div class="btnrow"><button class="copy ghost" style="position:static" data-copy="https://www.instagram.com/growwithevelyn/
+https://www.tiktok.com/@mami.onami
+https://www.tiktok.com/@noevarner.ai
+https://www.instagram.com/the_content_queen/">Copy all four</button></div>
+  <p class="note">Write your own four down somewhere before you open Poppy. Name, platform, URL. You'll paste them in Step 4.</p>
+</section>
+
+<!-- STEP 3 -->
+<section class="card" id="s3">
+  <div class="step"><span class="n">3</span><h2 class="sec-title">Record your audit brain dump <span class="time">15 MIN</span></h2></div>
+  <p class="sec-sub">Poppy can only sell what it knows about. Open Loom (or your phone's voice memos), answer these out loud like you're explaining your audit to a friend, and don't polish. Then copy the transcript.</p>
+  <ol class="q">
+    <li>What's your audit called, and is it a reading, an audit, or both?<small>Straight off your Day 1 card.</small></li>
+    <li>Who is it for? Describe one real person.<small>Where they are in their journey, what they do, what they already have going for them.</small></li>
+    <li>What are they experiencing the week before they'd book?<small>The frustration, what they've already tried, the sentence they keep saying to themselves.</small></li>
+    <li>What do they want in the next 90 days? What do they want for real, underneath that?</li>
+    <li>What happens on the call, start to finish?<small>What you look at, what you tune into, what you ask, how long it is.</small></li>
+    <li>What's the #1 thing you usually find blocking them?<small>Patterns from the people you've already helped. Two or three examples.</small></li>
+    <li>What do they walk away with?<small>The 3 steps, a recording, a written plan, whatever it is.</small></li>
+    <li>What do they send you before the call?<small>The intake form, their numbers, their chart, screenshots.</small></li>
+    <li>How do you know this works?<small>Client results, your own story, the moment you first did this for someone. Tell the stories, not the summary.</small></li>
+    <li>Why do people hesitate to book, and what do you say to that?<small>Price, time, "I'm not ready", "I've done readings before".</small></li>
+    <li>What happens after the audit?<small>Your 90-day container, in a sentence. Price if you want it in the plan.</small></li>
+    <li>What does it cost and how do they book?<small>Your booking link. How many spaces you open a week.</small></li>
+    <li>Your story in three sentences: where you were, where you are now, who you work with.<small>This becomes the middle of your caption.</small></li>
+    <li>What do you never want in your content?<small>Words, vibes, claims, anything that isn't you.</small></li>
+  </ol>
+  <div class="copybox"><div class="lbl">THE 14 QUESTIONS · COPY TO YOUR NOTES</div><button class="copy" data-copy-id="qs">Copy</button>
+  <pre class="prose" id="qs">My audit brain dump
+
+1. What's my audit called, and is it a reading, an audit, or both?
+2. Who is it for? One real person: where they are in their journey, what they do, what they already have.
+3. What are they experiencing the week before they'd book? What have they tried? What do they keep saying to themselves?
+4. What do they want in the next 90 days? What do they want underneath that?
+5. What happens on the call, start to finish? What do I look at, tune into, ask?
+6. What's the #1 thing I usually find blocking them? Two or three examples.
+7. What do they walk away with?
+8. What do they send me before the call?
+9. How do I know this works? Client stories, my own story, the first time I did this for someone.
+10. Why do people hesitate to book, and what do I say to that?
+11. What happens after the audit? My 90-day container in a sentence.
+12. What does it cost and how do they book? How many spaces a week?
+13. My story in three sentences: where I was, where I am now, who I work with.
+14. What do I never want in my content?</pre></div>
+  <p class="note m"><strong>Getting the transcript out of Loom:</strong> open the recording, click Transcript on the right, Copy transcript. Paste it into a note and call it "My audit brain dump". That's what goes on the board in Step 4.</p>
+  <p class="note">If you've already run audits, add the anonymized notes or transcripts from two or three of them as well. Real calls are the best source of the words your people use. Take their names out first.</p>
+</section>
+
+<!-- STEP 4 -->
+<section class="card" id="s4">
+  <div class="step"><span class="n">4</span><h2 class="sec-title">Load the board in Poppy <span class="time">10 MIN</span></h2></div>
+  <p class="sec-sub">Everything goes on one board and connects to one chat. That's the whole trick: the chat can see your creators, your profile and your audit at the same time.</p>
+  <ol class="steps">
+    <li>Open your copy of the board from Step 1.</li>
+    <li>Paste each creator's profile URL onto the board. Poppy pulls in their videos. Give it a minute per creator.</li>
+    <li>Paste <strong>your own profile URL</strong> onto the board the same way. Your last 10 videos and your top 10 are what Prompt 1 reads.</li>
+    <li>Add your audit brain dump transcript as a text or document node. Add any anonymized audit notes next to it.</li>
+    <li>Add one chat to the board and connect every node to it: the creators, your profile, your transcript.</li>
+    <li>Prompts 1, 2, 3 and 4 all go in <strong>that same chat</strong>, one after the other. Each one builds on the last.</li>
+  </ol>
+  <p class="note">Prompt 1 and Prompt 2 can go in either order. What matters is that both have been answered before you paste Prompt 3.</p>
+</section>
+
+<!-- PROMPT 1 -->
+<section class="card" id="s5">
+  <div class="step"><span class="n">5</span><h2 class="sec-title">Prompt 1: Who am I? <span class="time">5 MIN</span></h2></div>
+  <p class="sec-sub">Paste into the chat with your own profile connected. Read the answer. If it describes someone who isn't you, tell it what's off before moving on.</p>
+  <div class="copybox"><div class="lbl">PROMPT 1 · WHO AM I?</div><button class="copy" data-copy-id="p1">Copy prompt</button>
+<pre id="p1" data-tpl>Can you please analyze my last 10 [PLATFORM] videos as well as my top 10 outlier videos to help me determine:
+
+1. My brand style, voice and tone
+2. The words and phrases I use a lot
+3. What I actually talk about
+4. Who my ideal audience is. Be specific about where they are in their journey
+5. Looking at the outlier videos specifically: why did these perform best? What was different about the hook, the format, the emotion, or the topic?
+
+I want you to really understand my channel, what I talk about and who I'm talking to, because everything we build after this is based on it.</pre></div>
+</section>
+
+<!-- PROMPT 2 -->
+<section class="card" id="s6">
+  <div class="step"><span class="n">6</span><h2 class="sec-title">Prompt 2: What's working for them? <span class="time">5 MIN</span></h2></div>
+  <p class="sec-sub">Same chat, creators connected. You want frameworks you can run your own topics through, not their posts rewritten.</p>
+  <div class="copybox"><div class="lbl">PROMPT 2 · WHAT'S WORKING FOR THEM?</div><button class="copy" data-copy-id="p2">Copy prompt</button>
+<pre id="p2" data-tpl>Now analyze the creator accounts I've added to this board. Look at their top-performing and outlier posts and distill them into repeatable frameworks I can use in my own content to grow my [PLATFORM] account to [GOAL] this year.
+
+For each framework, give me:
+- A name for it
+- The structure: hook → body → close
+- Why it works psychologically
+- One example of how I'd use it for [MY NICHE]
+
+Don't give me their posts word for word. Give me the reusable skeleton I can run my own topics through.</pre></div>
+  <p class="note">Ask for more if it gives you fewer than five frameworks. Six to eight is the sweet spot for a 30-day plan.</p>
+</section>
+
+<!-- PROMPT 3 -->
+<section class="card gold" id="s7">
+  <div class="step"><span class="n">7</span><h2 class="sec-title">Prompt 3: Here's my audit <span class="time">5 MIN</span></h2></div>
+  <p class="sec-sub">Same chat, with your brain dump transcript connected. This is the step that turns a growth plan into a booking plan. Don't skip it.</p>
+  <div class="copybox"><div class="lbl">PROMPT 3 · HERE'S MY AUDIT</div><button class="copy" data-copy-id="p3">Copy prompt</button>
+<pre id="p3" data-tpl>Now here's the offer this entire content plan exists to sell: my [AUDIT NAME].
+
+I've connected the transcript of me talking it through (plus any audit notes I added). Read it all and give me back, in my own words wherever you can:
+
+1. Who it's for: the person, not the topic. Where they are in their journey right now.
+2. What they're experiencing the week before they'd book: the frustration, what they've already tried, what they're saying to themselves.
+3. What happens on the call and what I actually look at or tune into.
+4. The #1 thing I find blocking them, and the 3 steps they walk away with for the next 90 days.
+5. The proof: client results, my own story, specific moments. Flag anything that sounds like a claim I can't back up.
+6. The 5 reasons they hesitate to book, and what I'd say to each one.
+7. What happens after the audit (the 90-day container), in one sentence.
+8. The 10 beliefs someone has to hold before they'd book this. The content has to install these.
+9. My one-line pitch for the audit, written three different ways in my voice.
+
+Only use what's in the transcript and notes. If something important is missing, ask me for it before we build the plan.</pre></div>
+  <p class="note">If it asks you questions, answer them in the chat. Two minutes here saves you rewriting ten posts later.</p>
+</section>
+
+<!-- PROMPT 4 -->
+<section class="card" id="s8">
+  <div class="step"><span class="n">8</span><h2 class="sec-title">Prompt 4: Build my 30 days <span class="time">10 MIN</span></h2></div>
+  <p class="sec-sub">Same chat. Pick the version for your board. Poppy will take a few minutes and give you a long answer. Read the strategy part first, then the posts.</p>
+  <div class="toggle" role="tablist" aria-label="Board">
+    <button class="on" data-v="short" role="tab" aria-selected="true">Short-form · Instagram + TikTok</button>
+    <button data-v="yt" role="tab" aria-selected="false">YouTube</button>
+  </div>
+  <div class="copybox" id="p4short"><div class="lbl">PROMPT 4 · BUILD MY 30 DAYS · SHORT-FORM</div><button class="copy" data-copy-id="p4s">Copy prompt</button>
+<pre id="p4s" data-tpl>Knowing everything you know about me, my account, the frameworks we pulled from those creators, and my [AUDIT NAME], build me a content strategy for the next 30 days with ONE job: get the right people to book my audit.
+
+Base it on my outlier content and on the frameworks from the creators I added. Every post should either reach the person my audit is for, shift one of the 10 beliefs, or make booking the obvious next step. Work the 10 beliefs through the month so each one lands at least twice.
+
+Give me the strategy first (what we're doing, why, which beliefs land in which week), then the actual posts for all 30 days.
+
+For each post, give me:
+- Day number and funnel stage: TOP (reach the right person), MIDDLE (shift a belief), or BOTTOM (book the audit)
+- Which framework it's running
+- Verbal hook (what I say out loud in the first 3 seconds)
+- Title hook (the text on screen)
+- Outline, including the story, analogy or example, and the CTA
+- Line 1 of the caption: one line about this video, ending with "comment [KEYWORD]" (the rest of my caption is the same every day, I'll add it myself)
+- Top 5 relevant hashtags for discovery
+
+Rules:
+- Every video is 15 to 60 seconds
+- Roughly 10 top, 12 middle, 8 bottom. Label each one
+- At least once a week: a behind-the-scenes of me preparing for or running an audit, or a client result told as a story. These are my strongest booking posts
+- No income claims as the hook. No urgency I can't back up
+- Everything in my voice, using the words and phrases you pulled from my videos
+
+CTA rule, follow it exactly:
+In the VIDEO I say "the details are below" or "I made this, grab it below". Never "comment [word]" inside the video itself.
+The "comment [KEYWORD]" instruction goes in LINE 1 OF THE CAPTION. That way the exact same video works for organic AND for a paid campaign without re-editing a thing.</pre></div>
+  <div class="copybox" id="p4yt" hidden><div class="lbl">PROMPT 4 · BUILD MY 30 DAYS · YOUTUBE</div><button class="copy" data-copy-id="p4y">Copy prompt</button>
+<pre id="p4y" data-tpl>Knowing everything you know about me, my channel, the frameworks we pulled from those creators, and my [AUDIT NAME], build me a content strategy for the next 30 videos with ONE job: get the right people to book my audit.
+
+Base it on my outlier videos and on the frameworks from the creators I added. Every video should either reach the person my audit is for, shift one of the 10 beliefs, or make booking the obvious next step. Work the 10 beliefs through the plan so each one lands at least twice.
+
+Give me the strategy first (what we're doing, why, which beliefs land in which week), then the actual videos, all 30.
+
+For each video, give me:
+- Number and funnel stage: TOP (reach the right person), MIDDLE (shift a belief), or BOTTOM (book the audit)
+- Which framework it's running
+- Title (under 60 characters) and thumbnail text (2 to 4 words, all caps)
+- Hook: what I say in the first 30 seconds
+- Outline: intro, proof, promise, plan, with the story or example that goes in each part
+- The CTA, said once in the middle and once at the end
+- The first two lines of the description
+- Top 5 tags
+
+Rules:
+- Every video is 8 to 15 minutes. Mark 4 of them as pillar videos I cut Shorts from
+- Roughly 10 top, 12 middle, 8 bottom. Label each one
+- At least one in four is a behind-the-scenes of me preparing for or running an audit, or a client result walked through as a story. These are my strongest booking videos
+- No income claims in the title. No urgency I can't back up
+- Everything in my voice, using the words and phrases you pulled from my videos
+
+CTA rule, follow it exactly:
+In the VIDEO I say "the link is in the description". Never a comment keyword inside the video itself.
+The booking link goes in the first line of the description, the free gift in the second. That way the same video sells for years without re-editing a thing.</pre></div>
+  <p class="note">If it stops at Day 15, type "continue from Day 16". Then ask it to put the whole plan, strategy and all 30 posts, into one message so you can copy it in one go for Prompt 5.</p>
+</section>
+
+<!-- PROMPT 5 -->
+<section class="card mint" id="s9">
+  <div class="step"><span class="n">9</span><h2 class="sec-title">Prompt 5: Turn it into your page <span class="time">10 MIN</span></h2></div>
+  <p class="sec-sub">This one goes in <strong>Claude</strong>, not Poppy. You get a page you open on your phone every day: today's post, copy the caption, tick Filmed, tick Posted.</p>
+  <ol class="steps">
+    <li>In Poppy, copy the whole plan from Prompt 4 (strategy and all 30 days).</li>
+    <li>Open claude.ai and start a new chat.</li>
+    <li>Paste Prompt 5. Replace the two bracketed lines at the bottom with your caption block from Step 10 and the plan you just copied. Send.</li>
+    <li>Claude builds the page as an artifact. Open it, check Day 1, then use Publish or Download in the artifact's menu. Add the link to your phone's home screen.</li>
+  </ol>
+  <div class="copybox"><div class="lbl">PROMPT 5 · TURN IT INTO MY PAGE · PASTE INTO CLAUDE</div><button class="copy" data-copy-id="p5">Copy prompt</button>
+<pre id="p5" data-tpl>Turn the 30-day content plan below into a single HTML file I can open on my phone and use every day for the next 30 days.
+
+Design:
+- Dark: near-black background (#0b0a12), white text, lavender accent (#b79cf5), violet buttons (#7c5cf0), mint for done (#7fe0b8), gold for highlights (#e8c878). Rounded cards with a faint grid texture. Font: Outfit from Google Fonts, with an italic serif (Instrument Serif) for the big numbers.
+- Top: my name, "[AUDIT NAME] · 30-day plan", the platform, and a ring that counts how many of the 30 posts I've marked Posted.
+- Then the strategy in short tiles: the job of the month, the beliefs by week, the keyword and what it sends.
+- A filter row by framework and by funnel stage (top, middle, bottom).
+- Then 30 collapsible day cards. Each card shows: day, funnel stage, framework, verbal hook, title hook, outline, the full caption (line 1 from the plan, then my evergreen caption block pasted under it), and the hashtags. Copy buttons on the full caption and on the hashtags. Two tick boxes, Filmed and Posted, saved in the browser so they're still ticked when I come back.
+- A "Today" button that scrolls to the first day not yet marked Posted.
+
+Rules:
+- Keep every hook, outline, caption line and hashtag word for word. Don't rewrite my plan.
+- Phone first. No external libraries except the Google Font.
+- One file. Nothing stored anywhere except my own browser.
+
+Here's my evergreen caption block. Paste it under line 1 on every post:
+[PASTE YOUR CAPTION BLOCK FROM STEP 10]
+
+Here's the plan:
+[PASTE THE WHOLE PLAN FROM POPPY]</pre></div>
+  <p class="note m">Want to see what the finished page looks like? Here's an example built for a made-up tarot reader: <a href="https://aefieldi.github.io/30daycontentplanexample/" target="_blank" rel="noopener">30-Day Content Plan, example client</a>.</p>
+</section>
+
+<!-- STEP 10 -->
+<section class="card" id="s10">
+  <div class="step"><span class="n">10</span><h2 class="sec-title">The caption on every post <span class="time">10 MIN</span></h2></div>
+  <p class="sec-sub">Line 1 changes every day. Poppy wrote it. Everything under it is the same for 30 days, so the person who finds you on Day 22 gets the same offer as the person who found you on Day 1.</p>
+  <div class="twocol">
+    <div class="block"><h3>How it's built</h3><ul class="dots"><li><strong>Line 1:</strong> one line about this video, ending in the comment keyword. From your plan.</li><li><strong>Your story:</strong> two or three sentences, where you were, where you are now, who you work with. Question 13 from your brain dump. The contrast is the hook, not the income.</li><li><strong>The audit line:</strong> who it's for, what they're ready for, what they walk away with, limited availability. Ends with the keyword.</li><li><strong>The gift line:</strong> optional. A second keyword for the wider audience who isn't ready to book yet. Something free you already made.</li></ul></div>
+    <div class="block"><h3>When someone comments the keyword</h3><ul class="dots"><li>Set the keyword up in ManyChat (Instagram) so the booking link goes out on its own.</li><li>No ManyChat? Reply by hand within the hour: "Sent you a DM 🔮" and send the link.</li><li>Send the booking link, not a "let's chat". They commented because they want the thing.</li><li>Keep the keyword the same for the whole 30 days. One word, caps, easy to type.</li></ul></div>
+  </div>
+  <div class="copybox"><div class="lbl">YOUR CAPTION TEMPLATE · FILL IN THE BRACKETS</div><button class="copy" data-copy-id="cap">Copy template</button>
+<pre class="prose" id="cap" data-tpl>[LINE 1 FROM YOUR PLAN. One line about this video, ending with: comment [KEYWORD] and I'll send you the details]
+
+[Your story in two or three sentences. Where you were, where you are now, who you work with. Lead with the contrast, not the income. Same lines every day.]
+
+🔮 Comment [KEYWORD] if you're [who the audit is for] ready to [what they want in the next 90 days]. You walk away with [what they get: the #1 thing blocking you and your 3 next steps]. Limited availability.
+
+🎁 Comment [GIFT WORD] if you're [the wider audience] who wants [what the free thing gives them]. I'll send you [the free thing].</pre></div>
+  <div class="copybox"><div class="lbl">MINE · THE ONE I'M USING RIGHT NOW</div><button class="copy ghost" data-copy-id="capme">Copy</button>
+<pre class="prose" id="capme">[ONE LINE ABOUT THIS VIDEO]
+
+7 years ago I was stuck in a job that didn't fulfill me making $10 an hour living on a Pluto line in Raleigh NC. Now I run my entire biz solo from Spain 🌞🌴🌊🇪🇸 with AI as my team, work w the best clients ever, and the #1 spiritual business community on Skool.
+
+🔮 Comment AUDIT if you're an expert with 5K+ followers and proven client results, ready to build the room that pays you to exist on repeat for what you already know, love, and do. *These take a lot of prep as the value in INSANEEE. You walk away w an entire game-Plan w your 3 next steps to manifest your biz dreams in next 90 days. *Spots are very LIMITED based on availability*
+
+🎁 Comment GIFT if you're a coach or creator who wants to monetize faster with Claude, AI-powered content systems, community, and ads. I'll send you the 30+ free resources and trainings I actually use.</pre></div>
+  <p class="note p">Never put a number of spots in the caption. "Limited availability" stays true whatever your calendar looks like this week. A number you have to update is a number that will be wrong.</p>
+</section>
+
+<!-- STEP 11 -->
+<section class="card" id="s11">
+  <div class="step"><span class="n">11</span><h2 class="sec-title">Post it for 30 days</h2></div>
+  <p class="quote">There's no one right way. There's only your way and consistency.</p>
+  <ul class="dots">
+    <li><strong>Batch film.</strong> Open your page, film Days 1 to 7 in one sitting. Tick Filmed. Captions are already written.</li>
+    <li><strong>Post daily, same time.</strong> Copy the caption from the card, paste, post, tick Posted. Two minutes.</li>
+    <li><strong>Answer every keyword comment within the hour.</strong> The link, not a conversation.</li>
+    <li><strong>Watch what outperforms.</strong> At Day 15, tell Poppy which five posts did best and ask it to rebuild Days 16 to 30 around those. Same chat, it remembers everything.</li>
+    <li><strong>Log your audits.</strong> Every booking goes in <a href="https://aefieldi.github.io/audittracker/" target="_blank" rel="noopener">The Audit Method Daily Tracker</a>, and in the community so we can celebrate it.</li>
+    <li><strong>Day 31:</strong> run Prompt 4 again with the new data. Your second plan is better than your first, every time.</li>
+  </ul>
+  <div class="btnrow">
+    <a class="btn" href="#fill">Back to the top</a>
+    <a class="btn o" href="https://aefieldi.github.io/30daycontentplanexample/" target="_blank" rel="noopener">See a finished plan</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="sig">Amanda</div>
+  The Audit Method · Spiritual Business Skool. The fields on this page save in your browser only. Nothing leaves it.
+</footer>
+</div>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+(function(){
+  var KEY='audit_promo_plan_v1';
+  var keys=['PLATFORM','GOAL','MY NICHE','AUDIT NAME','KEYWORD'];
+  var tpls={};
+  document.querySelectorAll('[data-tpl]').forEach(function(el){tpls[el.id]=el.textContent;});
+  var vals={};
+  try{vals=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){vals={};}
+
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function fill(text,asHtml){
+    var out=asHtml?esc(text):text;
+    keys.forEach(function(k){
+      var v=(vals[k]||'').trim();
+      var re=new RegExp('\\['+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\]','g');
+      if(asHtml){
+        out=out.replace(re,v?'<span class="ph filled">'+esc(v)+'</span>':'<span class="ph">['+k+']</span>');
+      }else{
+        out=out.replace(re,v?v:'['+k+']');
+      }
+    });
+    return out;
+  }
+  function render(){
+    Object.keys(tpls).forEach(function(id){
+      var el=document.getElementById(id);
+      el.innerHTML=fill(tpls[id],true);
+    });
+  }
+  document.querySelectorAll('.field input').forEach(function(inp){
+    var k=inp.getAttribute('data-key');
+    if(vals[k])inp.value=vals[k];
+    inp.addEventListener('input',function(){
+      vals[k]=inp.value;
+      try{localStorage.setItem(KEY,JSON.stringify(vals));}catch(e){}
+      render();
+    });
+  });
+  render();
+
+  var toast=document.getElementById('toast'),tt;
+  function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},1400);}
+  function copyText(txt,btn){
+    var label=btn.textContent;
+    function ok(){btn.classList.add('done');btn.textContent='Copied';showToast('Copied');setTimeout(function(){btn.classList.remove('done');btn.textContent=label;},1600);}
+    function sel(){
+      var ta=document.createElement('textarea');ta.value=txt;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');ok();}catch(e){showToast('Select and copy by hand');}
+      document.body.removeChild(ta);
+    }
+    try{navigator.clipboard.writeText(txt).then(ok,sel);}catch(e){sel();}
+  }
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var txt=btn.getAttribute('data-copy');
+      var id=btn.getAttribute('data-copy-id');
+      if(id){txt=tpls[id]?fill(tpls[id],false):document.getElementById(id).textContent;}
+      copyText(txt,btn);
+    });
+  });
+
+  document.querySelectorAll('.toggle button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.toggle button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false');});
+      b.classList.add('on');b.setAttribute('aria-selected','true');
+      var v=b.getAttribute('data-v');
+      document.getElementById('p4short').hidden=v!=='short';
+      document.getElementById('p4yt').hidden=v!=='yt';
+    });
+  });
+})();
+</script>
+</body>
+</html>
