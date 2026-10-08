@@ -104,6 +104,15 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:24
 .creator .copy{position:static}
 @media(max-width:480px){.creator{grid-template-columns:1fr}.creator .copy{justify-self:start}}
 
+/* your creators */
+.mine{display:grid;gap:10px;margin-top:16px}
+.mine .row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}
+.mine .row .k{font-family:"DM Mono",monospace;font-size:12px;color:var(--lav);text-align:center}
+.mine .row input{width:100%;background:rgba(0,0,0,.28);border:1px solid var(--line2);border-radius:12px;color:var(--txt);font:400 14px "DM Mono",ui-monospace,Menlo,monospace;padding:11px 13px}
+.mine .row input::placeholder{color:var(--muted);font-family:Outfit,sans-serif}
+.mine .row .copy{position:static}
+@media(max-width:480px){.mine .row{grid-template-columns:34px 1fr}.mine .row .copy{grid-column:2;justify-self:start}}
+
 /* toggle */
 .toggle{display:inline-flex;border:1px solid var(--line2);border-radius:99px;padding:3px;background:rgba(0,0,0,.2);margin:0 0 4px}
 .toggle button{background:transparent;border:0;color:var(--muted);font:500 13.5px Outfit,sans-serif;padding:7px 15px;border-radius:99px;cursor:pointer}
@@ -194,7 +203,7 @@ ol.q li small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
     <div class="block"><h3>What you're looking for</h3><ul class="dots"><li><strong>Momentum, not size.</strong> A 20K account with videos pulling 300K views teaches you more than a 2M account coasting.</li><li><strong>Outliers.</strong> Scroll their grid and look for the videos with 5 to 10 times their usual views. Those are what Poppy will study.</li><li><strong>Your format.</strong> If you'll be talking to camera, pick talking-to-camera creators. Not a faceless page.</li><li><strong>Next-door niches count.</strong> A business coach's framework works for a love reader. The structure moves, the topic is yours.</li></ul></div>
     <div class="block"><h3>Where to look</h3><ul class="dots"><li>Your own Explore or For You page. The algorithm already knows what you watch.</li><li>Search the words your people use: "psychic business", "tarot readers", "human design coach".</li><li>Who the creators you already follow are collaborating with.</li><li>Copy the profile URL from the share button on their profile, not a single video.</li></ul></div>
   </div>
-  <h3 style="margin:24px 0 2px;font-size:17px;font-weight:600">The five I'm using for mine</h3>
+  <h3 style="margin:24px 0 2px;font-size:17px;font-weight:600">Example: the five I'm using for mine</h3>
   <p style="color:var(--muted);font-size:14px;margin:0">Short-form board, Instagram and TikTok. Business and content creators, because that's what my audit is about. Yours should be in your lane.</p>
   <div class="creators">
     <div class="creator"><div><div class="h">Grow With Evelyn<span>INSTAGRAM</span></div><div class="u"><a href="https://www.instagram.com/growwithevelyn/" target="_blank" rel="noopener">https://www.instagram.com/growwithevelyn/</a></div></div><button class="copy ghost" data-copy="https://www.instagram.com/growwithevelyn/">Copy URL</button></div>
@@ -208,7 +217,17 @@ https://www.tiktok.com/@mami.onami
 https://www.tiktok.com/@noevarner.ai
 https://www.instagram.com/the_content_queen/
 https://www.tiktok.com/@diaryofasalesgirl">Copy all five</button></div>
-  <p class="note">Write your own down somewhere before you open Poppy. Name, platform, URL. You'll paste them in Step 4.</p>
+  <h3 style="margin:28px 0 2px;font-size:17px;font-weight:600">Your creators</h3>
+  <p style="color:var(--muted);font-size:14px;margin:0">Paste the full profile URL of each creator you're using. They save on this device, and in Step 4 you copy them straight onto your Poppy board.</p>
+  <div class="mine">
+    <div class="row"><span class="k">01</span><input id="c1" data-cr="1" placeholder="https://www.instagram.com/..." autocomplete="off" spellcheck="false"><button class="copy ghost" data-copy-input="c1">Copy URL</button></div>
+    <div class="row"><span class="k">02</span><input id="c2" data-cr="2" placeholder="https://www.tiktok.com/@..." autocomplete="off" spellcheck="false"><button class="copy ghost" data-copy-input="c2">Copy URL</button></div>
+    <div class="row"><span class="k">03</span><input id="c3" data-cr="3" placeholder="https://www.instagram.com/..." autocomplete="off" spellcheck="false"><button class="copy ghost" data-copy-input="c3">Copy URL</button></div>
+    <div class="row"><span class="k">04</span><input id="c4" data-cr="4" placeholder="https://www.tiktok.com/@..." autocomplete="off" spellcheck="false"><button class="copy ghost" data-copy-input="c4">Copy URL</button></div>
+    <div class="row"><span class="k">05</span><input id="c5" data-cr="5" placeholder="Optional. Three or four is enough" autocomplete="off" spellcheck="false"><button class="copy ghost" data-copy-input="c5">Copy URL</button></div>
+  </div>
+  <div class="btnrow"><button class="copy" style="position:static" data-copy-inputs="c1,c2,c3,c4,c5">Copy all of mine</button></div>
+  <p class="note">Three or four is enough. Five if you can't choose. Fewer than three and Poppy has nothing to compare.</p>
 </section>
 
 <!-- STEP 3 -->
@@ -258,7 +277,7 @@ https://www.tiktok.com/@diaryofasalesgirl">Copy all five</button></div>
   <p class="sec-sub">Everything goes on one board and connects to one chat. That's the whole trick: the chat can see your creators, your profile and your audit at the same time.</p>
   <ol class="steps">
     <li>Open your copy of the board from Step 1.</li>
-    <li>Paste each creator's profile URL onto the board. Poppy pulls in their videos. Give it a minute per creator.</li>
+    <li>Paste each creator's profile URL onto the board, one at a time, from your boxes in Step 2. Poppy pulls in their videos. Give it a minute per creator.</li>
     <li>Paste <strong>your own profile URL</strong> onto the board the same way. Your last 10 videos and your top 10 are what Prompt 1 reads.</li>
     <li>Add your audit brain dump transcript as a text or document node. Add any anonymized audit notes next to it.</li>
     <li>Add one chat to the board and connect every node to it: the creators, your profile, your transcript.</li>
@@ -549,6 +568,13 @@ My transcript:
   });
   render();
 
+  var CKEY='audit_promo_creators_v1', cvals={};
+  try{cvals=JSON.parse(localStorage.getItem(CKEY)||'{}')||{};}catch(e){cvals={};}
+  document.querySelectorAll('.mine input').forEach(function(inp){
+    if(cvals[inp.id])inp.value=cvals[inp.id];
+    inp.addEventListener('input',function(){cvals[inp.id]=inp.value.trim();try{localStorage.setItem(CKEY,JSON.stringify(cvals));}catch(e){}});
+  });
+
   var toast=document.getElementById('toast'),tt;
   function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},1400);}
   function copyText(txt,btn){
@@ -566,6 +592,10 @@ My transcript:
       var txt=btn.getAttribute('data-copy');
       var id=btn.getAttribute('data-copy-id');
       if(id){txt=tpls[id]?fill(tpls[id],false):document.getElementById(id).textContent;}
+      var one=btn.getAttribute('data-copy-input');
+      if(one){txt=document.getElementById(one).value.trim();if(!txt){showToast('Paste a URL in the box first');return;}}
+      var many=btn.getAttribute('data-copy-inputs');
+      if(many){txt=many.split(',').map(function(i){return document.getElementById(i).value.trim();}).filter(Boolean).join('\n');if(!txt){showToast('Paste your URLs in the boxes first');return;}}
       copyText(txt,btn);
     });
   });
