@@ -104,6 +104,14 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:24
 .creator .copy{position:static}
 @media(max-width:480px){.creator{grid-template-columns:1fr}.creator .copy{justify-self:start}}
 
+/* example moves */
+.moves{display:grid;gap:14px;margin-top:14px}
+.move{display:grid;grid-template-columns:54px 1fr;gap:6px 18px;border:1px solid var(--line2);border-radius:20px;padding:22px 22px 18px;background:rgba(0,0,0,.12)}
+.move .n{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:46px;line-height:.9;color:var(--lav)}
+.move h3{font-size:19px;line-height:1.25;margin:4px 0 10px}
+.move ul.dots li{font-size:15px}
+@media(max-width:480px){.move{grid-template-columns:1fr}.move .n{font-size:34px}}
+
 /* your creators */
 .mine{display:grid;gap:10px;margin-top:16px}
 .mine .row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}
@@ -460,12 +468,22 @@ Here's the plan:
   <p class="sec-sub">One long video that sells your audit for a year, built from the same brain dump. The slides are done. You fill them in with one prompt, record once, upload once.</p>
   <div class="twocol">
     <div class="block"><h3>What's in the template</h3><ul class="dots"><li>31 slides in the dark look: the promise, who it's for, where they are, your story, the real problem, who they become, your method in three steps with examples, what happens when they book, proof, the invitation, their questions.</li><li>Every box says what goes in it, in [brackets]. Every slide has speaker notes that say what the slide does and roughly what you say.</li><li>Three photo frames and three screenshot frames to swap for yours.</li></ul></div>
-    <div class="block"><h3>How to use it</h3><ol class="steps"><li>Download the template below. Open it in Canva (Create a design, Import file), Google Slides or Keynote.</li><li>In Claude, paste Prompt 6, then under it the breakdown Poppy gave you from Prompt 3 and your brain dump transcript. Send.</li><li>Paste the copy into the slides box by box. Swap the photo frames for your photos and the screenshot frames for your booking page, your intake form and what they get afterwards.</li><li>Record on Zoom or Loom: screen share, camera on, 25 to 40 minutes. The speaker notes are your script.</li><li>Upload to YouTube. Title from the slide 1 promise. Booking link in the first line of the description, your free thing in the second. Pin a comment with the link.</li><li>Post it in your community and your stories, and add it to your Work With Me highlight.</li></ol></div>
+    <div class="block"><h3>How to use it</h3><ol class="steps"><li>Open the template in Google Slides below. <strong>File, Make a copy</strong>, so you're working in your own. (Canva instead? Download the .pptx and use Create a design, Import file.)</li><li>In Claude, paste Prompt 6, then under it the breakdown Poppy gave you from Prompt 3 and your brain dump transcript. Send.</li><li>Paste the copy into your slides box by box. Right-click each photo frame, Replace image, for your photos. The three screenshot frames are your booking page, your intake form and what they get afterwards.</li><li>Record on Zoom or Loom: screen share, camera on, 25 to 40 minutes. The speaker notes are your script. Read them, don't perform them.</li><li>Upload to YouTube. Title from the slide 1 promise. Booking link in the first line of the description, your free thing in the second. Pin a comment with the link.</li><li>Post it in your community and your stories, and add it to your Work With Me highlight.</li></ol></div>
   </div>
   <div class="btnrow">
-    <a class="btn" href="The%20Audit%20Masterclass%20Template.pptx" download>Download the slides template</a>
-    <a class="btn o" href="https://aefieldi.github.io/30dayauditpromoplan/The%20Audit%20Masterclass%20Template.pptx" target="_blank" rel="noopener">Open in a new tab</a>
+    <a class="btn" href="https://docs.google.com/presentation/d/1ZJFuMGsi0WWbWpPihvrEFN9cduN3aSdP/edit?usp=sharing" target="_blank" rel="noopener">Open the template in Google Slides</a>
+    <button class="copy ghost" style="position:static" data-copy="https://docs.google.com/presentation/d/1ZJFuMGsi0WWbWpPihvrEFN9cduN3aSdP/edit?usp=sharing">Copy link</button>
+    <a class="btn o" href="The%20Audit%20Masterclass%20Template.pptx" download>Download the .pptx</a>
   </div>
+  <h3 style="margin:28px 0 2px;font-size:17px;font-weight:600">Example: what filling it in looks like</h3>
+  <p style="color:var(--muted);font-size:14px;margin:0 0 6px">Luna is a made-up tarot reader with a Clarity Audit. This is what Prompt 6 gives her for four of the 31 slides, from a ten-minute brain dump.</p>
+  <div class="moves">
+    <div class="move"><div class="n">1</div><div><h3>The promise</h3><ul class="dots"><li><strong>Headline:</strong> A reading business that books itself from one 60-minute Clarity Audit, without posting three times a day.</li><li><strong>Line under it:</strong> You learn how to turn the readings you already do into one offer people book on their own, in a way that fits a Projector's energy, so you stop living reading to reading.</li><li><strong>Band:</strong> ONE PAID CALL · THEIR 3 STEPS · 90 DAYS TOGETHER</li><li><strong>Notes:</strong> "If you've ever had a great month followed by a dead one, this video is for you. I'm going to show you the one offer that changed that for me, and I'll tell you exactly what happens when you book it."</li></ul></div></div>
+    <div class="move"><div class="n">3</div><div><h3>Where you might be right now</h3><ul class="dots"><li><strong>01 Readings by the hour:</strong> you're fully booked and still broke, because every reading is a one-off.</li><li><strong>02 Great month, dead month:</strong> five readings in March, none in April, no idea why.</li><li><strong>03 Posting into the void:</strong> you post every day and the DMs are "how much?" then silence.</li><li><strong>04 Too many offers:</strong> a $22, a $55, a $111 and a $333, and nobody can tell the difference.</li><li><strong>05 Gift, no door:</strong> people love you. There's nothing for them to book.</li><li><strong>Notes:</strong> "Comment the number. I read every one, and it tells me which of these to make the next video about."</li></ul></div></div>
+    <div class="move"><div class="n">14</div><div><h3>The answer</h3><ul class="dots"><li><strong>Name:</strong> The Clarity Audit.</li><li><strong>One line:</strong> One paid 60-minute session where I read your cards and then audit your offers through them, so you leave with the one thing in your way and your three next steps.</li><li><strong>Step 1, Pick the door:</strong> one reading becomes one offer with one price. <strong>Step 2, Open it:</strong> a highlight, a keyword and a link that takes the payment. <strong>Step 3, Walk them through:</strong> the 60 minutes, three things, one deep dive, one question at the end.</li></ul></div></div>
+    <div class="move"><div class="n">28</div><div><h3>The invitation</h3><ul class="dots"><li><strong>Headline:</strong> Book your Clarity Audit.</li><li><strong>Line:</strong> For readers who are booked and still broke. 60 minutes, the #1 thing blocking you from a reading business that books itself, and your 3 next steps for the next 90 days.</li><li><strong>Card:</strong> Clarity Audit · paid · [booking link]. <strong>Not ready yet?</strong> The Pick-a-Card Pricing Guide, free, link in the description.</li><li><strong>Notes:</strong> "The link is in the description. Limited availability, because I prep every one of these before we get on. That's it. That's the ask."</li></ul></div></div>
+  </div>
+  <p class="note">Notice what's not there: no income number in the headline, no "only 3 spots", no second pitch after slide 28. The example slides sell the outside eye, not the information.</p>
   <div class="copybox"><div class="lbl">PROMPT 6 · FILL IN MY MASTERCLASS SLIDES · PASTE INTO CLAUDE</div><button class="copy" data-copy-id="p6">Copy prompt</button>
 <pre id="p6" data-tpl>Fill in my audit masterclass slides.
 
@@ -518,7 +536,7 @@ My audit breakdown from Poppy:
 
 My transcript:
 [PASTE YOUR BRAIN DUMP TRANSCRIPT]</pre></div>
-  <p class="note m">Fonts are Google Fonts (Outfit, Instrument Serif, DM Mono), so Canva and Google Slides show the deck as designed. PowerPoint or Keynote without them installed will swap in their own. Either way, the structure holds.</p>
+  <p class="note m">Fonts are Google Fonts (Outfit, Instrument Serif, DM Mono), so Google Slides and Canva show the deck as designed. PowerPoint or Keynote without them installed will swap in their own. Either way, the structure holds.</p>
 </section>
 
 <footer class="foot">
